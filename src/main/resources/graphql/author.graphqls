@@ -2,12 +2,11 @@ type Author {
     id: ID!
     firstName: String!
     lastName: String!
+    books: [Book]
+    dateOfBirth: Date
 }
 
-type Query {
-    findAllAuthors: [Author]!
-    countAuthors: Long!
-}
+scalar Date
 
 type Mutation {
     newAuthor(firstName: String!, lastName: String!) : Author!

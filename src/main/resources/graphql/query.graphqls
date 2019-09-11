@@ -1,0 +1,8 @@
+type Query {
+    findAllBooks: [Book]!
+    findAllAuthors: [Author]!
+    findAuthorsByFirstname(firstname: String): [Author]!
+    findAuthorsByLastname(lastname: String): [Author]!
+    countBooks: Long!
+    countAuthors: Long!
+}

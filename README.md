@@ -1,16 +1,13 @@
-# graphql-java-spring-boot-example
-Sample app for my tutorial [Building a GraphQL Server with Spring Boot](https://app.pluralsight.com/guides/building-a-graphql-server-with-spring-boot). 
+# Workshop GraphQL
 
-You'll need [Java 9](http://www.oracle.com/technetwork/java/javase/downloads/jdk9-downloads-3848520.html).
+This project is based on [https://github.com/eh3rrera/graphql-java-spring-boot-example](https://github.com/eh3rrera/graphql-java-spring-boot-example)
 
-Clone this repo and execute `mvnw spring-boot:run`. Or inside an IDE, execute the class `com.example.DemoGraphQL.DemoGraphQlApplication`.
+## Starting the Spring Boot web app
+`mvnw spring-boot:run`
 
-You can go to [http://localhost:8080/h2-console/login.jsp](http://localhost:8080/h2-console/login.jsp) and enter the following information:
-- JDBC URL: jdbc:h2:mem:testdb
-- User Name: sa
-- Password: <blank>
-
-To check the database or to [http://localhost:8080/graphiql](http://localhost:8080/graphiql) to start executing queries. For example:
+## Web UIs
+### GraphiQL
+Go to GraphiQL [http://localhost:8080/graphiql](http://localhost:8080/graphiql) to start executing queries. For example:
 ```
 {
   findAllBooks {
@@ -18,7 +15,7 @@ To check the database or to [http://localhost:8080/graphiql](http://localhost:80
     isbn
     title
     pageCount
-    author {
+    authors {
       firstName
       lastName
     }
@@ -32,11 +29,19 @@ mutation {
   newBook(
     title: "Java: The Complete Reference, Tenth Edition", 
     isbn: "1259589331", 
-    author: 1) {
+    authors: 1) {
       id title
   }
 }
 ```
+
+### Database admin
+You can go to [http://localhost:8080/h2-console/](http://localhost:8080/h2-console) and enter the following information:
+- JDBC URL: jdbc:h2:mem:testdb
+- User Name: sa
+- Password: <blank>
+
+
 
 # License
 MIT

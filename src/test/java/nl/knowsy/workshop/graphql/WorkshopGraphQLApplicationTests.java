@@ -1,4 +1,4 @@
-package com.example.DemoGraphQL;
+package nl.knowsy.workshop.graphql;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class DemoGraphQlApplicationTests {
+public class WorkshopGraphQLApplicationTests {
 
 	@Test
 	public void contextLoads() {

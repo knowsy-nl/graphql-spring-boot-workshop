@@ -1,6 +1,6 @@
-package com.example.DemoGraphQL.repository;
+package nl.knowsy.workshop.graphql.repository;
 
-import com.example.DemoGraphQL.model.Book;
+import nl.knowsy.workshop.graphql.model.Book;
 import org.springframework.data.repository.CrudRepository;
 
 public interface BookRepository extends CrudRepository<Book, Long> {

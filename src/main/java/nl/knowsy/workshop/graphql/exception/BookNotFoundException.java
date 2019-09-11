@@ -1,4 +1,4 @@
-package com.example.DemoGraphQL.exception;
+package nl.knowsy.workshop.graphql.exception;
 
 import graphql.ErrorType;
 import graphql.GraphQLError;
